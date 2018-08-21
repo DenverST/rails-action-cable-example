@@ -9,4 +9,10 @@ class MessagesController < ApplicationController
       head :ok
     end
   end
+
+  private
+
+  def message_params
+    params.require(:message).permit(:content, :chatroom_id)
+  end
 end
