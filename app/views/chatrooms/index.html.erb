@@ -1,0 +1,9 @@
+
+
+<ul>
+  <% @chatrooms.each do |chatroom| %>
+    <%= chatroom.topic %>
+  <% end %>
+</ul>
+
+<%= link_to "Add Chatroom", new_chatroom_path %>
