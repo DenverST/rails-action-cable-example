@@ -2,7 +2,7 @@
 
 <ul>
   <% @chatrooms.each do |chatroom| %>
-    <%= chatroom.topic %>
+    <%= link_to chatroom.topic, chatroom_path(chatroom) %>
   <% end %>
 </ul>
 
